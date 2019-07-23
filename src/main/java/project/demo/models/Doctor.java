@@ -16,7 +16,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "doctor")
 @ApiModel
-public class Doctor {
+public class Doctor extends BaseEntity {
 
     @Id
     @Column(name = "DOCTOR_ID")
