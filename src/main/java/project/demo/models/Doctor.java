@@ -21,7 +21,7 @@ public class Doctor extends BaseEntity {
     @Id
     @Column(name = "DOCTOR_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long brokerId;
+    private Long doctorId;
 
     @Column(name = "FIRST_NAME")
     private String firstName;
