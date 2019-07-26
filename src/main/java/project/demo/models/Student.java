@@ -8,33 +8,28 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "DOCTOR")
+@Table(name = "STUDENT")
 @ApiModel
-public class Doctor extends BaseEntity {
+public class Student extends BaseEntity {
 
     @Id
-    @Column(name = "DOCTOR_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long doctorId;
+    @Column(name = "STUDENT_ID")
+    private Integer studentId;
 
-    @Column(name = "FIRST_NAME")
-    private String firstName;
+    @Column(name = "FULL_NAME")
+    private String fullName;
 
-    @Column(name = "LAST_NAME")
-    private String lastName;
+    @Column(name = "LEVEL_ID")
+    private Integer levelId;
 
-    @Column(name = "MIDDLE_NAME")
-    private String middleName;
-
-    @Column(name = "PHONE_NUMBER")
-    private String phoneNumber;
-
+    @Column(name = "STATUS")
+    private String status;
 
     @Column(name = "USERNAME")
     private String username;

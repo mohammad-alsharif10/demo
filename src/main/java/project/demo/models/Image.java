@@ -13,13 +13,13 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "image")
+@Table(name = "IMAGE")
 @ApiModel
 public class Image extends BaseEntity {
 
     @Id
-    @Column(name = "IMAGE_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "IMAGE_ID")
     private Long imageId;
 
     @Column(name = "PATH")
